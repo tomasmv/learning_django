@@ -41,6 +41,7 @@ class NewVistorTest(LiveServerTestCase):
         # She types "Buy peacock feathers" into a text box (Edith's hobby
         # is tying fly-fishing lures)
         inputbox.send_keys('Buy peacock feathers')
+        inputbox.send_keys(Keys.ENTER)
 
         # When she hits enter, the page updates, and now the page lists
         # "1: Buy peacock feathers" as an item in a to-do list table
